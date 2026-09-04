@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PollyGlot</title>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <header>
+      <img 
+        src="/assets/parrot.png"
+        class="logo-img"
+        alt="Logo image"
+      />
+      <div class="header-text">
+        <h1>PollyGlot</h1>
+        <p>Perfect Translation Every Time</p>
+      </div>
+      </header>
+      <main>
+        <form id="translate-form">
+            <label for="text">
+              Text to translate 👇
+            </label>
+            <textarea 
+              id="text" 
+              name="text" 
+              rows="4" 
+              maxlength="100"
+              required
+              placeholder="How are you?"
+            ></textarea>
+            <fieldset>
+              <legend>
+                Select language 👇
+              </legend>
+              <label for="lang1">
+                <input type="radio" id="lang1" name="lang" checked>
+                French
+                <img src="/assets/fr-flag.png" alt="Flag"/>
+              </label>
+              <label for="lang2">
+                <input type="radio" id="lang2" name="lang">
+                Spanish
+                <img src="/assets/sp-flag.png" alt="Flag"/>
+              </label>
+              <label for="lang3">
+                <input type="radio" id="lang3" name="lang">
+                Japanese
+                <img src="/assets/jpn-flag.png" alt="Flag"/>
+              </label>
+            </fieldset>
+            <button>Translate</button>
+        </form>
+      </main>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

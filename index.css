@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    max-width: 390px;
+    max-height: 780px;
+    box-shadow: 0 2px 2px 2px #bcbcbc;
+    padding-bottom: 0.5em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    background-image: url("./assets/worldmap.png");
+    background-position: center;
+    background-size: cover;
+    padding: 4em 2.6em;
+}
+
+header .logo-img {
+    max-width: 6em;
+    height: auto;
+}
+
+.header-text > h1 {
+    font-family: "Big Shoulders", sans-serif;
+    color: #32CD32;
+    font-weight: 900;
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+.header-text > p {
+    color: #ffffff;
+    font-size: 0.76rem;
+    margin: 0;
+}
+
+main {
+    border: 4px solid black;
+    border-radius: 15px;
+    margin: 2em 1em;
+    padding: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+form > label,
+form > fieldset > legend {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #035A9D;
+}
+
+form > textarea,
+form > fieldset > label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+form > textarea {
+    width: 100%;
+    height: auto;
+    resize: none;
+    background-color: #EFF0F4;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em;
+}
+
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    gap: 0.3em;
+    padding: 0.5em 1em;
+}
+
+form > fieldset > legend {
+    text-align: center;
+}
+
+form > fieldset > label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+form > fieldset > label > img {
+    border: 1px solid #999999;
+}
+
+form > button {
+    width: 100%;
+    background-color: #035A9D;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 800;
+    border-radius: 6px;
+    padding-block: 0.4em;
+}
