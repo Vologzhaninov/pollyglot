@@ -22,39 +22,40 @@
       </div>
       </header>
       <main>
-        <form id="translate-form">
-            <label for="text">
+        <form>
+            <label for="user-input" id="input-label" class="hand-point">
               Text to translate 👇
             </label>
             <textarea 
-              id="text" 
-              name="text" 
+              id="user-input" 
+              class="textarea"
+              name="user-input" 
               rows="4" 
               maxlength="100"
               required
               placeholder="How are you?"
             ></textarea>
             <fieldset>
-              <legend>
+              <legend class="hand-point">
                 Select language 👇
               </legend>
               <label for="lang1">
-                <input type="radio" id="lang1" name="lang" checked>
+                <input type="radio" id="lang1" name="lang" value="French" checked>
                 French
                 <img src="/assets/fr-flag.png" alt="Flag"/>
               </label>
               <label for="lang2">
-                <input type="radio" id="lang2" name="lang">
+                <input type="radio" id="lang2" name="lang" value="Spanish">
                 Spanish
                 <img src="/assets/sp-flag.png" alt="Flag"/>
               </label>
               <label for="lang3">
-                <input type="radio" id="lang3" name="lang">
+                <input type="radio" id="lang3" name="lang" value="Japanese">
                 Japanese
                 <img src="/assets/jpn-flag.png" alt="Flag"/>
               </label>
             </fieldset>
-            <button>Translate</button>
+            <button type="submit">Translate</button>
         </form>
       </main>
     <script type="module" src="/index.js"></script>

@@ -54,24 +54,23 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
 }
 
-form > label,
-form > fieldset > legend {
+.hand-point {
     font-size: 1.25rem;
     font-weight: 700;
     color: #035A9D;
+    padding-bottom: 1em;
 }
 
-form > textarea,
+.textarea,
 form > fieldset > label {
     font-size: 1.25rem;
     font-weight: 600;
     color: #333333;
 }
 
-form > textarea {
+.textarea {
     width: 100%;
     height: auto;
     resize: none;
@@ -87,8 +86,8 @@ form > fieldset {
     justify-content: center;
     width: 100%;
     border: none;
-    gap: 0.3em;
-    padding: 0.5em 1em;
+    padding-inline: 1em;
+    margin-block: 1.5em;
 }
 
 form > fieldset > legend {
@@ -113,4 +112,11 @@ form > button {
     font-weight: 800;
     border-radius: 6px;
     padding-block: 0.4em;
+}
+
+/* Start over render */
+.output-fieldset {
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1.5em;
 }
