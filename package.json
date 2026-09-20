@@ -30,6 +30,7 @@
     "dompurify": "^3.4.15",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "isomorphic-dompurify": "^3.19.0",
     "openai": "^7.10.0",
     "vite": "latest"
   }
