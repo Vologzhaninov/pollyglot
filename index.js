@@ -1,10 +1,12 @@
-import DOMPurify from 'dompurify'
+import DOMPurify from 'dompurify';
+import 'dotenv/config';
 
 const form = document.querySelector('form');
 const userInput = document.getElementById('user-input');
 const inputLabel = document.getElementById('input-label');
 const fieldset = document.querySelector('fieldset');
 const button = document.querySelector('button');
+const API_URL = process.env.API_URL;
 let language = '';
 let isFirstRender = true;
 
@@ -28,8 +30,7 @@ async function handleTranslate(event) {
     //console.log(language)
 
     try {
-        const response = await fetch (
-            '/api/translate', {
+        const response = await fetch (`${API_URL}/api/translate`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
