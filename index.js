@@ -1,4 +1,4 @@
-import DOMPurify from 'isomorphic-dompurify';
+import * as DOMPurify from 'dompurify';
 import 'dotenv/config';
 
 const form = document.querySelector('form');
