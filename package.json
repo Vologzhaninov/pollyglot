@@ -1,0 +1,36 @@
+{
+  "name": "pollyglot",
+  "version": "1.0.0",
+  "description": "Translation app",
+  "keywords": [
+    "AI",
+    "translation",
+    "app"
+  ],
+  "homepage": "https://github.com/Vologzhaninov/pollyglot#readme",
+  "bugs": {
+    "url": "https://github.com/Vologzhaninov/pollyglot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vologzhaninov/pollyglot.git"
+  },
+  "license": "ISC",
+  "author": "Dmitry Vologzhaninov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dompurify": "^3.4.15",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^7.10.0",
+    "vite": "latest"
+  }
+}
