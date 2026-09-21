@@ -1,13 +1,12 @@
 import DOMPurify from 'https://cdn.jsdelivr.net/npm/dompurify/+esm';
 //import DOMPurify from 'dompurify';
-import 'dotenv/config';
 
 const form = document.querySelector('form');
 const userInput = document.getElementById('user-input');
 const inputLabel = document.getElementById('input-label');
 const fieldset = document.querySelector('fieldset');
 const button = document.querySelector('button');
-const API_URL = process.env.API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 let language = '';
 let isFirstRender = true;
 
