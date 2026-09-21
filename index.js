@@ -6,7 +6,7 @@ const userInput = document.getElementById('user-input');
 const inputLabel = document.getElementById('input-label');
 const fieldset = document.querySelector('fieldset');
 const button = document.querySelector('button');
-const API_URL = 'https://node-express-server-beql.onrender.com:10000';
+const API_URL = 'https://node-express-server-beql.onrender.com';
 let language = '';
 let isFirstRender = true;
 
