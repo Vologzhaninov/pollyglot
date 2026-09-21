@@ -6,7 +6,7 @@ const userInput = document.getElementById('user-input');
 const inputLabel = document.getElementById('input-label');
 const fieldset = document.querySelector('fieldset');
 const button = document.querySelector('button');
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = 'https://node-express-server-beql.onrender.com:10000';
 let language = '';
 let isFirstRender = true;
 
