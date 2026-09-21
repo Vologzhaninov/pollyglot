@@ -13,7 +13,7 @@ let isFirstRender = true;
 form.addEventListener('submit', handleTranslate);
 
 function setLoading(isLoading) {
-    form.disabled = isLoading;
+    button.disabled = isLoading;
 }
 
 async function handleTranslate(event) {
