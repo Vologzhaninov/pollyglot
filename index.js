@@ -1,5 +1,5 @@
-import DOMPurify from './dompurify';
-import './dotenv/config';
+import DOMPurify from 'dompurify';
+import 'dotenv/config';
 
 const form = document.querySelector('form');
 const userInput = document.getElementById('user-input');
